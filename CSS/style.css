@@ -176,7 +176,8 @@ a{
 
   nav > ul {
 
-    margin-left: 25%;
+    margin-left: 5%;
+    gap: 0;
   }
 
   #icon{
@@ -186,8 +187,50 @@ a{
 #planet{
       font-size: medium ; 
       font-family: Square;
-      margin-left: 2px;
+      margin-left: 0;
 }
+
+main{
+  display: flex;
+  padding: 2em;
+  flex-wrap: wrap;
+  padding-top: 6em;
+  flex-direction: row;
+ margin-left: 0;
+  font-size: 14px;
 }
+
+#earth{
+  margin-bottom: 1.5em;
+  width: 90%;
+}
+
+#aside{
+  margin-left: 1.5em;}
+
+  aside{
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+  }
+  
+.box{
+   border-radius: 8px;
+    margin-bottom: 1.5em;
+}
+
+  .dets{
+  display: flex;
+  flex-direction: column;
+   color: var(--secondary-color);
+  border: 2px solid var(--secondary-color);
+  border-radius: 8px;
+  width: 75%;
+  margin: 1em;
+  padding: 0.3em;
+  background-color: var(--primary-color);
+}
+
+
 
 
