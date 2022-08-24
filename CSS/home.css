@@ -243,18 +243,20 @@ input:checked * .slider:before{
   }
 
   nav > ul {
-
+    margin-bottom: 4px;
     margin-left: 25%;
   }
 
   #icon{
   margin-right: 0.5em;
+   margin-bottom: 15px;
 }
 
 #planet{
       font-size: medium ; 
       font-family: Square;
       margin-left: 2px;
+       margin-bottom: 4px;
 }
 
 main{
