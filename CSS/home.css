@@ -184,3 +184,92 @@ button:hover{
 #toggle.active .indicator{
   left: 1;
 }
+
+.switch{
+    position: relative;
+    display: inline-block;
+    width: 110px;
+    height: 60px;
+}
+
+.slider{
+  position:absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  background-color: rgb(255, 0, 157);
+  transition: 0.4s;
+  border-radius: 34px;
+}
+
+.slider:before{
+  position: absolute;
+  content: "";
+  height: 50px;
+  width: 50px;
+  left: 5px;
+  bottom: 5px;
+  background-color: rgb(204, 24, 24);
+  transition: 0.4s;
+  border-radius: 50px;
+}
+
+input:checked * .slider{
+  background-color: aqua;
+}
+
+input:checked * .slider:before{
+  transform: translateX(50px);
+}
+
+#planet{
+      font-size:large ; 
+      font-family: Square;
+      margin-left: 20px;
+      font-weight:900;
+}
+
+@media only screen and (max-width: 768px) {
+
+  html{
+    width: 100;
+    height: 100;
+  }
+  header{
+    height: 8vh;
+    width: 100%;
+    margin: 0;
+  }
+
+  nav > ul {
+
+    margin-left: 25%;
+  }
+
+  #icon{
+  margin-right: 0.5em;
+}
+
+#planet{
+      font-size: medium ; 
+      font-family: Square;
+      margin-left: 2px;
+}
+
+main{
+  margin-left: 15%;
+}
+  
+input[type=text] , input[type=email] ,
+ input[type=password] , 
+ input[type=submit]{
+    width: 80%;
+}
+
+button {
+   margin-left: 10%;
+   width: 55%;
+}
+
+}
