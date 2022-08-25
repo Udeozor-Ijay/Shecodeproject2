@@ -28,11 +28,13 @@ html{
 :root{
   --primary-color:  hsl(213, 69%, 97%);
   --secondary-color:  hsl(218, 84%, 13%);
+  --tertiary-color: rgb(53, 160, 80);
 }
 
 .light-theme{
    --primary-color:  hsl(218, 84%, 13%);
   --secondary-color:  hsl(234, 25%, 92%);
+   --tertiary-color: hsl(81, 67%, 82%);
 }
 
 body{
@@ -280,7 +282,7 @@ main{
     top: 70px;
     gap: 0;
     flex-direction: column;
-    background-color: rgb(55, 55, 117);
+    background-color: var(--tertiary-color);
     width: 70%;
     text-align: center;
     transition: 0.3s;
