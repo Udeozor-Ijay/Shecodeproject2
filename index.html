@@ -27,7 +27,7 @@
            
                 <h1  style="margin-top:0.3em; margin-bottom: 0.3em;">JOIN OUR COMMUNITY</h1>
                 <img id="hero" src="images/hero.png" >
-            <form id="form" name=" RegForm " action="earth.html" method="GET">
+            <form id="form" name=" RegForm " action="earth.html" method="GET" onsubmit ="return verifyPassword()">
                 <label class="form" for="fname">First name:</label><br>
                 <input class="form" type="text" id="fname" name="fname" required><br>
 
@@ -38,12 +38,12 @@
                 <input class="form" type="email" id="mail" name="mail" placeholder="planets@mail.com" required><br>
 
                 <label class="form" for="password">Password:</label><br>
-                <input class="form" type="password" id="password" name="password" ><br><br>
+                <input class="form" type="password" id="password" name="password" required ><br>
 
                  <label class="form" for="confirm">Confirm password:</label><br>
-                <input class="form" type="password" id="confirm" name="confirm" ><br>
+                <input class="form" type="password" id="confirm" name="confirm" required ><br>
 
-                <button class="form" type="submit" onclick="passValid()">REGISTER</button>
+                <button class="form" type="submit">REGISTER</button>
             </form> 
 
         </main>

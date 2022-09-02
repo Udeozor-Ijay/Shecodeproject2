@@ -1,3 +1,4 @@
+//for darkmode effect
 const icon = document.getElementById("icon");
 icon.onclick = function () {
   document.body.classList.toggle("light-theme");
@@ -8,6 +9,7 @@ icon.onclick = function () {
   }
 };
 
+//for harmburger
 const hamburger = document.querySelector(".hamburger");
 
 const navMenu = document.querySelector(".nav-menu");
@@ -24,23 +26,18 @@ document.querySelectorAll(".nav-link").forEach((n) =>
   })
 );
 
+// form validation
 let name = document.getElementById("fname");
 let lname = document.getElementById("lname");
-let password = document.getElementById("password");
-let confirm = document.getElementById("confirm");
+const password = document.getElementById("password");
+const confirm = document.getElementById("confirm");
 let form = document.getElementById("form");
 
-function passValid() {
-  let password = document.getElementById("password");
-  let confirm = document.getElementById("confirm");
-
-  if (password != confirm) {
-    alert("Passwords do not match");
-  } else {
-    alert("Pasword created successfully");
-  }
-}
-
+password.addEventListener("input", (e) => {
+  const input = e.target.value
+  console.log(input)
+})
+ 
 const toggle = document.getElementById("toggle");
 toggle.onclick = function () {
   toggle.classList.toggle("active");
