@@ -26,19 +26,30 @@ document.querySelectorAll(".nav-link").forEach((n) =>
   })
 );
 
-// form validation
-let name = document.getElementById("fname");
-let lname = document.getElementById("lname");
-const password = document.getElementById("password");
-const confirm = document.getElementById("confirm");
-let form = document.getElementById("form");
-
-password.addEventListener("input", (e) => {
-  const input = e.target.value
-  console.log(input)
-})
- 
 const toggle = document.getElementById("toggle");
 toggle.onclick = function () {
   toggle.classList.toggle("active");
 };
+
+
+// form validation
+function verifyPassword() {
+  let name = document.getElementById("fname");
+  let lname = document.getElementById("lname");
+  const password = document.getElementById("password").value;
+  const confirm = document.getElementById("confirm").value;
+  let form = document.getElementById("form");
+
+  if (password != confirm) {
+    alert("Passwords do not match!");
+    
+  }
+
+  else {
+    alert("Password created successfully")
+  }
+}
+
+
+
+ 
